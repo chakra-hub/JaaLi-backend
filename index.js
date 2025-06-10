@@ -9,7 +9,7 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://jaalifrontend-two.vercel.app/" }));
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
 
