@@ -9,7 +9,13 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "https://jaalifrontend-two.vercel.app/" }));
+// Or allow specific origin(s)
+app.use(
+  cors({
+    origin: "https://jaalifrontend-two.vercel.app/",
+    credentials: true,
+  })
+);
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
 
