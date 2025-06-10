@@ -12,7 +12,7 @@ app.use(express.json());
 // Or allow specific origin(s)
 app.use(
   cors({
-    origin: "https://jaa-li-frontend.vercel.app/",
+    origin: "https://jaa-li-frontend.vercel.app",
     credentials: true,
   })
 );
